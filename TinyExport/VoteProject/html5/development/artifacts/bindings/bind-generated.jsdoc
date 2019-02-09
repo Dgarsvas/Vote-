@@ -1,8 +1,20 @@
 /**
 
 @component
-@memberof entities.game.NewEntityGroup
+@memberof entities.game.MainEntityGroup
 @name Component
+*/
+/**
+
+@component
+@memberof game
+@name Score
+*/
+/**
+
+@member {int8}
+@memberof game.Score
+@name score
 */
 /**
 
@@ -225,6 +237,42 @@
 @member {int32}
 @memberof ut.EditorExtensions.EntityLayer
 @name layer
+*/
+/**
+
+@component
+@memberof game
+@name XMLInitialization_State
+*/
+/**
+
+@member {bool}
+@memberof game.XMLInitialization_State
+@name initialized
+*/
+/**
+
+@member {bool}
+@memberof game.XMLInitialization_State
+@name enabled
+*/
+/**
+
+@member {bool}
+@memberof game.XMLInitialization_State
+@name onEnableCalled
+*/
+/**
+
+@member {bool}
+@memberof game.XMLInitialization_State
+@name onDisableCalled
+*/
+/**
+
+@system
+@memberof game
+@name ButtonSystemJS
 */
 
 

@@ -1,11 +1,24 @@
 using Unity.Collections.LowLevel.Unsafe;
-namespace entities.game.NewEntityGroup
+namespace entities.game.MainEntityGroup
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct Component : UTiny.IComponentData
     {
 
 
+
+
+
+    }
+}
+namespace game
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Score : UTiny.IComponentData
+    {
+
+
+        public sbyte score;
 
 
 
@@ -197,6 +210,22 @@ namespace ut.EditorExtensions
 
 
         public int layer;
+
+
+
+    }
+}
+namespace game
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct XMLInitialization_State : UTiny.IComponentData
+    {
+
+
+        public bool initialized;
+        public bool enabled;
+        public bool onEnableCalled;
+        public bool onDisableCalled;
 
 
 

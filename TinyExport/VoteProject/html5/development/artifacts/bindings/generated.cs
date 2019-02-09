@@ -15,7 +15,7 @@ using UTiny.Text;
  */
 namespace entities.game
 {
-    namespace NewEntityGroup
+    namespace MainEntityGroup
     {
         public struct Component : IComponentData
         {
@@ -25,6 +25,10 @@ namespace entities.game
 
 namespace game
 {
+    public struct Score : IComponentData
+    {
+        public sbyte score;
+    }
 }
 
 namespace ut.Core2D
@@ -169,4 +173,20 @@ namespace ut.Text
 
 namespace ut.HTML
 {
+}
+namespace game
+{
+    public struct XMLInitialization_State : IComponentData
+    {
+        public bool initialized;
+        public bool enabled;
+        public bool onEnableCalled;
+        public bool onDisableCalled;
+    }
+}
+namespace game
+{
+    public class ButtonSystemJS : IComponentSystem
+    {
+    }
 }

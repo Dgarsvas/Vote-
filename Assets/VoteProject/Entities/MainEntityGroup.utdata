@@ -5,8 +5,8 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "68e58429ffc54ed0a5c4c1e70dbef466", "Name": "Camera" },
-        { "$TypeId": 9, "Id": "c840649950f840409857f5ab88842a72", "Name": "CanvasCamera" },
+        { "$TypeId": 9, "Id": "070047bfafb44695a7f3901729b7a934", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "c840649950f840409857f5ab88842a72", "Name": "Camera" },
         { "$TypeId": 9, "Id": "b0a458c905784799809e6615c9d045fd", "Name": "Canvas" },
         { "$TypeId": 9, "Id": "53a2eba57a95475d8e58134f1f31ffc1", "Name": "Text" },
         { "$TypeId": 9, "Id": "ceadd25c6e194efab5961d9d051a1087", "Name": "Buttons" },
@@ -21,47 +21,28 @@
 },
 {
     "$TypeId": 5,
-    "Id": "68e58429ffc54ed0a5c4c1e70dbef466",
+    "Id": "070047bfafb44695a7f3901729b7a934",
     "Name": "Camera",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {}
     }, {
-        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
-        "Properties": {
-            "halfVerticalSize": 6,
-            "rect": {
-                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
-                "Properties": {
-                    "height": 2
-                }
-            },
-            "backgroundColor": {
-                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
-                "Properties": {
-                    "r": 0.1098039,
-                    "g": 0.4,
-                    "b": 0.654902,
-                    "a": 1
-                }
-            },
-            "clearFlags": {
-                "$TypeId": 8,
-                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
-                "Id": "9faedc246f34513076701ef66b5ad74f",
-                "Name": "SolidColor",
-                "Value": 1
-            },
-            "depth": -1
-        }
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" }
     }]
 },
 {
     "$TypeId": 5,
     "Id": "c840649950f840409857f5ab88842a72",
-    "Name": "CanvasCamera",
+    "Name": "Camera",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
@@ -80,8 +61,25 @@
                 "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
                 "Properties": {
                     "x": 0,
+                    "width": 0.3,
                     "height": 1
                 }
+            },
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.1098039,
+                    "g": 0.4,
+                    "b": 0.654902,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
             }
         }
     }]
@@ -142,7 +140,7 @@
     }, {
         "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
         "Properties": {
-            "size": 30
+            "size": 20
         }
     }, {
         "Type": { "Id": "0481d22c456081a992e7c7ee42da6c19", "Name": "Text2DStyleBitmapFont" },
@@ -642,6 +640,8 @@
         }
     }, {
         "Type": { "Id": "00d6bc791188d69186aa19bf8f6652a8", "Name": "RectTransformFinalSize" }
+    }, {
+        "Type": { "Id": "6f976b4af21f4398a98f5ddf188d39a3", "Name": "Score" }
     }]
 },
 {
@@ -706,7 +706,7 @@
     }, {
         "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
         "Properties": {
-            "size": 30
+            "size": 20
         }
     }, {
         "Type": { "Id": "0481d22c456081a992e7c7ee42da6c19", "Name": "Text2DStyleBitmapFont" },
@@ -779,7 +779,7 @@
     }, {
         "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
         "Properties": {
-            "size": 20
+            "size": 15
         }
     }, {
         "Type": { "Id": "0481d22c456081a992e7c7ee42da6c19", "Name": "Text2DStyleBitmapFont" },

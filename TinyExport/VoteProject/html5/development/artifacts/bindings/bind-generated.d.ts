@@ -1,4 +1,4 @@
-declare namespace entities.game.NewEntityGroup {
+declare namespace entities.game.MainEntityGroup {
 
 class Component extends ut.Component {
   constructor();
@@ -11,6 +11,24 @@ class Component extends ut.Component {
   static _toPtr(p: number, v: Component): void;
   static _tempHeapPtr(v: Component): number;
   static _dtorFn(v: Component): void;
+}
+
+}
+declare namespace game {
+
+class Score extends ut.Component {
+  constructor(score?: number);
+  score: number;
+  
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Score): Score;
+  static _toPtr(p: number, v: Score): void;
+  static _tempHeapPtr(v: Score): number;
+  static _dtorFn(v: Score): void;
 }
 
 }
@@ -283,6 +301,33 @@ class EntityLayer extends ut.Component {
   static _dtorFn(v: EntityLayer): void;
 }
 
+}
+declare namespace game {
+
+class XMLInitialization_State extends ut.Component {
+  constructor(initialized?: boolean, enabled?: boolean, onEnableCalled?: boolean, onDisableCalled?: boolean);
+  initialized: boolean;
+  enabled: boolean;
+  onEnableCalled: boolean;
+  onDisableCalled: boolean;
+  static readonly initialized: ComponentFieldDesc;
+  static readonly enabled: ComponentFieldDesc;
+  static readonly onEnableCalled: ComponentFieldDesc;
+  static readonly onDisableCalled: ComponentFieldDesc;
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: XMLInitialization_State): XMLInitialization_State;
+  static _toPtr(p: number, v: XMLInitialization_State): void;
+  static _tempHeapPtr(v: XMLInitialization_State): number;
+  static _dtorFn(v: XMLInitialization_State): void;
+}
+
+}
+declare namespace game {
+var ButtonSystemJS: ut.SystemJS;
 }
 
 

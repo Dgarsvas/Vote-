@@ -26,44 +26,74 @@
         "Children": [{
             "Item": {
                 "Name": "JavaScript",
-                "Size": 112624,
+                "Size": 141049,
                 "CompressedSize": 0
             }
         }, {
             "Item": {
-                "Name": "Resources/unity_builtin_extra",
+                "Name": "Assets/VoteProject/Fonts/SFProText-Bold SDF.asset",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
+                "Object": { "$TypeId": 10, "Guid": "cb79a745810de114f82e85fe1aa6fd9d", "FileId": 11400000, "Type": 2 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/UISprite.jpg",
-                    "Size": 1224,
-                    "CompressedSize": 878,
-                    "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
-                }
-            }, {
-                "Item": {
-                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/UISprite_a.png",
-                    "Size": 448,
-                    "CompressedSize": 380,
-                    "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/SFProText-Bold SDF.png",
+                    "Size": 544532,
+                    "CompressedSize": 411119,
+                    "Object": { "$TypeId": 10, "Guid": "cb79a745810de114f82e85fe1aa6fd9d", "FileId": 11400000, "Type": 2 }
                 }
             }]
         }, {
             "Item": {
-                "Name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Name": "Assets/VoteProject/Sprites/buttonSprite.png",
                 "Size": 0,
                 "CompressedSize": 0,
-                "Object": { "$TypeId": 10, "Guid": "8f586378b4e144a9851e7b34d9b748ee", "FileId": 11400000, "Type": 2 }
+                "Object": { "$TypeId": 10, "Guid": "37bd191c280f43347bea1e2e8fca8e79", "FileId": 2800000, "Type": 3 }
             },
             "Children": [{
                 "Item": {
-                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/LiberationSans SDF.png",
-                    "Size": 714584,
-                    "CompressedSize": 538930,
-                    "Object": { "$TypeId": 10, "Guid": "8f586378b4e144a9851e7b34d9b748ee", "FileId": 11400000, "Type": 2 }
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/buttonSprite.jpg",
+                    "Size": 2436,
+                    "CompressedSize": 608,
+                    "Object": { "$TypeId": 10, "Guid": "37bd191c280f43347bea1e2e8fca8e79", "FileId": 2800000, "Type": 3 }
+                }
+            }, {
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/buttonSprite_a.png",
+                    "Size": 3360,
+                    "CompressedSize": 1459,
+                    "Object": { "$TypeId": 10, "Guid": "37bd191c280f43347bea1e2e8fca8e79", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/VoteProject/Fonts/SFProText-Light SDF.asset",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "04e351ffa18ab9643b2825bf342b7a50", "FileId": 11400000, "Type": 2 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/SFProText-Light SDF.png",
+                    "Size": 522476,
+                    "CompressedSize": 394542,
+                    "Object": { "$TypeId": 10, "Guid": "04e351ffa18ab9643b2825bf342b7a50", "FileId": 11400000, "Type": 2 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/VoteProject/Fonts/SFProText-Regular SDF.asset",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "386dca58d60874d459110ed31cefcc84", "FileId": 11400000, "Type": 2 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/SFProText-Regular SDF.png",
+                    "Size": 544680,
+                    "CompressedSize": 411453,
+                    "Object": { "$TypeId": 10, "Guid": "386dca58d60874d459110ed31cefcc84", "FileId": 11400000, "Type": 2 }
                 }
             }]
         }]
@@ -76,21 +106,21 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/VoteProject/html5/development/build/entities.js",
-                "Size": 8718,
-                "CompressedSize": 1870
+                "Size": 21779,
+                "CompressedSize": 3843
             },
             "Children": [{
                 "Item": {
-                    "Name": "NewEntityGroup",
-                    "Size": 8635,
-                    "CompressedSize": 1791
+                    "Name": "MainEntityGroup",
+                    "Size": 21692,
+                    "CompressedSize": 3750
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/VoteProject/html5/development/build/bindings.js",
-                "Size": 70475,
-                "CompressedSize": 5444
+                "Size": 78171,
+                "CompressedSize": 6271
             }
         }, {
             "Item": {
@@ -101,15 +131,15 @@
             "Children": [{
                 "Item": {
                     "Name": "TinyExport/VoteProject/html5/development/artifacts/scripts/tsc-emit.js",
-                    "Size": 3168,
-                    "CompressedSize": 927
+                    "Size": 5356,
+                    "CompressedSize": 1442
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/VoteProject/html5/development/build/main.js",
-                "Size": 2816,
-                "CompressedSize": 862
+                "Size": 4933,
+                "CompressedSize": 1298
             }
         }, {
             "Item": {

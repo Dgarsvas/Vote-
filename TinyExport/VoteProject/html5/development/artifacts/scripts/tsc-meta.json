@@ -3,8 +3,8 @@
     "Diagnostics": [],
     "Systems": [
         {
-            "Name": "ButtonSystem1",
-            "QualifiedName": "game.ButtonSystem1",
+            "Name": "ButtonSystem",
+            "QualifiedName": "game.ButtonSystem",
             "Description": "New System",
             "Source": {
                 "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/ButtonSystem.ts",
@@ -115,31 +115,31 @@
         {
             "Key": "tsconfig",
             "Description": "Time taken to read and parse the given tsconfig.json file",
-            "Duration": 190,
+            "Duration": 184,
             "Steps": 1
         },
         {
             "Key": "checksum",
             "Description": "Time taken to compute the MD5 of all inputs",
-            "Duration": 240,
+            "Duration": 222,
             "Steps": 1
         },
         {
             "Key": "compile",
             "Description": "Time taken to compile the TypeScript program",
-            "Duration": 892,
+            "Duration": 1311,
             "Steps": 11
         },
         {
             "Key": "emit",
             "Description": "Time taken to generate and write the JavaScript output",
-            "Duration": 64,
+            "Duration": 59,
             "Steps": 2
         },
         {
             "Key": "metadata",
             "Description": "Time taken to reflect Tiny metadata from the compiled program",
-            "Duration": 0,
+            "Duration": 7,
             "Steps": 1
         }
     ],
@@ -149,6 +149,6 @@
         "D:/programavimas/unity/Vote!/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
         "D:/programavimas/unity/Vote!/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
     ],
-    "InputHash": "a6d5ca1acc33ee9bbabaa40750fb90ba",
-    "GeneratedAt": "Sat Feb 09 2019 20:33:21 GMT+0200 (FLE Standard Time)"
+    "InputHash": "bbed4e7395629615c291b4552b106621",
+    "GeneratedAt": "Sat Feb 09 2019 21:08:12 GMT+0200 (FLE Standard Time)"
 }

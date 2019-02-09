@@ -5,50 +5,109 @@
 ut.meta.registerTypes();
 var entities = entities || {};
 entities.game = entities.game || {};
-entities.game.NewEntityGroup = entities.game.NewEntityGroup || {};
-entities.game.NewEntityGroup.Component = function() {
+entities.game.MainEntityGroup = entities.game.MainEntityGroup || {};
+entities.game.MainEntityGroup.Component = function() {
 };
-entities.game.NewEntityGroup.Component.prototype = Object.create(null);
-entities.game.NewEntityGroup.Component.prototype.constructor = entities.game.NewEntityGroup.Component;
-Object.defineProperties(entities.game.NewEntityGroup.Component.prototype, {
+entities.game.MainEntityGroup.Component.prototype = Object.create(null);
+entities.game.MainEntityGroup.Component.prototype.constructor = entities.game.MainEntityGroup.Component;
+Object.defineProperties(entities.game.MainEntityGroup.Component.prototype, {
 });
-entities.game.NewEntityGroup.Component._size = 1;
-entities.game.NewEntityGroup.Component._fromPtr = function(ptr, v) {
-  v = v || Object.create(entities.game.NewEntityGroup.Component.prototype);
+entities.game.MainEntityGroup.Component._size = 1;
+entities.game.MainEntityGroup.Component._fromPtr = function(ptr, v) {
+  v = v || Object.create(entities.game.MainEntityGroup.Component.prototype);
   return v;
 };
-entities.game.NewEntityGroup.Component._toPtr = function(ptr, v) {
+entities.game.MainEntityGroup.Component._toPtr = function(ptr, v) {
 };
-entities.game.NewEntityGroup.Component._toTempHeapPtr = function(ptr, v) {
+entities.game.MainEntityGroup.Component._toTempHeapPtr = function(ptr, v) {
 };
-entities.game.NewEntityGroup.Component._tempHeapPtr = function(v) {
+entities.game.MainEntityGroup.Component._tempHeapPtr = function(v) {
   var ptr = ut.tempHeapPtrBufferZero(1);
-  if (v) entities.game.NewEntityGroup.Component._toTempHeapPtr(ptr, v);
+  if (v) entities.game.MainEntityGroup.Component._toTempHeapPtr(ptr, v);
   return ptr;
 };
-entities.game.NewEntityGroup.Component.StorageView = function(ptr) {
+entities.game.MainEntityGroup.Component.StorageView = function(ptr) {
   this._ptr = ptr;
 };
-entities.game.NewEntityGroup.Component.StorageView.prototype = Object.create(null);
-entities.game.NewEntityGroup.Component.StorageView.prototype.constructor = entities.game.NewEntityGroup.Component.StorageView;
-entities.game.NewEntityGroup.Component._view = entities.game.NewEntityGroup.Component.StorageView;
-entities.game.NewEntityGroup.Component.StorageView._isSharedComp = entities.game.NewEntityGroup.Component._isSharedComp = false;
-entities.game.NewEntityGroup.Component.StorageView._fromPtr = entities.game.NewEntityGroup.Component._fromPtr;
-entities.game.NewEntityGroup.Component.StorageView._toPtr = entities.game.NewEntityGroup.Component._toPtr;
-entities.game.NewEntityGroup.Component.StorageView._tempHeapPtr = entities.game.NewEntityGroup.Component._tempHeapPtr;
-entities.game.NewEntityGroup.Component.StorageView._size = entities.game.NewEntityGroup.Component._size;
-entities.game.NewEntityGroup.Component.StorageView.prototype.$advance = function() {
+entities.game.MainEntityGroup.Component.StorageView.prototype = Object.create(null);
+entities.game.MainEntityGroup.Component.StorageView.prototype.constructor = entities.game.MainEntityGroup.Component.StorageView;
+entities.game.MainEntityGroup.Component._view = entities.game.MainEntityGroup.Component.StorageView;
+entities.game.MainEntityGroup.Component.StorageView._isSharedComp = entities.game.MainEntityGroup.Component._isSharedComp = false;
+entities.game.MainEntityGroup.Component.StorageView._fromPtr = entities.game.MainEntityGroup.Component._fromPtr;
+entities.game.MainEntityGroup.Component.StorageView._toPtr = entities.game.MainEntityGroup.Component._toPtr;
+entities.game.MainEntityGroup.Component.StorageView._tempHeapPtr = entities.game.MainEntityGroup.Component._tempHeapPtr;
+entities.game.MainEntityGroup.Component.StorageView._size = entities.game.MainEntityGroup.Component._size;
+entities.game.MainEntityGroup.Component.StorageView.prototype.$advance = function() {
   this._ptr += 1;
 };
-Object.defineProperties(entities.game.NewEntityGroup.Component.StorageView.prototype, {
+Object.defineProperties(entities.game.MainEntityGroup.Component.StorageView.prototype, {
 });
-entities.game.NewEntityGroup.Component._dtorFn = function dtor(ptr) { /* POD, no-op */ }
-// entities.game.NewEntityGroup.Component is a POD type, so a JavaScript side copy constructor entities.game.NewEntityGroup.Component._copyFn = function copy(src, dst) { ... } does not need to be generated for it
-entities.game.NewEntityGroup.Component._typeDesc = (function() {
-  return ut.meta.allocType(5, 'entities.game.NewEntityGroup.Component', 1, []);
+entities.game.MainEntityGroup.Component._dtorFn = function dtor(ptr) { /* POD, no-op */ }
+// entities.game.MainEntityGroup.Component is a POD type, so a JavaScript side copy constructor entities.game.MainEntityGroup.Component._copyFn = function copy(src, dst) { ... } does not need to be generated for it
+entities.game.MainEntityGroup.Component._typeDesc = (function() {
+  return ut.meta.allocType(5, 'entities.game.MainEntityGroup.Component', 1, []);
 })();
-Object.defineProperties(entities.game.NewEntityGroup.Component, { cid: { configurable: true, get: function() { delete entities.game.NewEntityGroup.Component.cid; var offsetsPtr = 0, offsetsCount = 0; return entities.game.NewEntityGroup.Component.cid = Module._ut_component_register_cid_with_type(entities.game.NewEntityGroup.Component._typeDesc, 0, 0, offsetsPtr, offsetsCount, 0, 0); } } });
-Object.defineProperties(entities.game.NewEntityGroup.Component.StorageView, { cid: { configurable: true, get: function() { return entities.game.NewEntityGroup.Component.cid; } } });
+Object.defineProperties(entities.game.MainEntityGroup.Component, { cid: { configurable: true, get: function() { delete entities.game.MainEntityGroup.Component.cid; var offsetsPtr = 0, offsetsCount = 0; return entities.game.MainEntityGroup.Component.cid = Module._ut_component_register_cid_with_type(entities.game.MainEntityGroup.Component._typeDesc, 0, 0, offsetsPtr, offsetsCount, 0, 0); } } });
+Object.defineProperties(entities.game.MainEntityGroup.Component.StorageView, { cid: { configurable: true, get: function() { return entities.game.MainEntityGroup.Component.cid; } } });
+var game = game || {};
+game.Score = function(arg0) {
+  this._score = (arg0|0);
+};
+game.Score.prototype = Object.create(null);
+game.Score.prototype.constructor = game.Score;
+Object.defineProperties(game.Score.prototype, {
+  score: {
+    get: function() { return this._score; },
+    set: function(v) { this._score = (v|0); },
+  },
+});
+game.Score._size = 1;
+game.Score._fromPtr = function(ptr, v) {
+  v = v || Object.create(game.Score.prototype);
+  v._score = HEAP8[ptr+0];
+  return v;
+};
+game.Score._toPtr = function(ptr, v) {
+  HEAP8[ptr+0] = v.score;
+};
+game.Score._toTempHeapPtr = function(ptr, v) {
+  HEAP8[ptr+0] = v.score;
+};
+game.Score._tempHeapPtr = function(v) {
+  var ptr = ut.tempHeapPtrBufferZero(1);
+  if (v) game.Score._toTempHeapPtr(ptr, v);
+  return ptr;
+};
+game.Score.StorageView = function(ptr) {
+  this._ptr = ptr;
+};
+game.Score.StorageView.prototype = Object.create(null);
+game.Score.StorageView.prototype.constructor = game.Score.StorageView;
+game.Score._view = game.Score.StorageView;
+game.Score.StorageView._isSharedComp = game.Score._isSharedComp = false;
+game.Score.StorageView._fromPtr = game.Score._fromPtr;
+game.Score.StorageView._toPtr = game.Score._toPtr;
+game.Score.StorageView._tempHeapPtr = game.Score._tempHeapPtr;
+game.Score.StorageView._size = game.Score._size;
+game.Score.StorageView.prototype.$advance = function() {
+  this._ptr += 1;
+};
+Object.defineProperties(game.Score.StorageView.prototype, {
+  score: {
+    get: function() { return HEAP8[this._ptr+0]; },
+    set: function(v) { HEAP8[this._ptr+0] = v; },
+  },
+});
+game.Score._dtorFn = function dtor(ptr) { /* POD, no-op */ }
+// game.Score is a POD type, so a JavaScript side copy constructor game.Score._copyFn = function copy(src, dst) { ... } does not need to be generated for it
+game.Score._typeDesc = (function() {
+  return ut.meta.allocType(5, 'game.Score', 1, [
+    {name: 'score', offset: 0, type: ut.meta.getType('int8')}
+  ]);
+})();
+Object.defineProperties(game.Score, { cid: { configurable: true, get: function() { delete game.Score.cid; var offsetsPtr = 0, offsetsCount = 0; return game.Score.cid = Module._ut_component_register_cid_with_type(game.Score._typeDesc, 1, 0, offsetsPtr, offsetsCount, 0, 0); } } });
+Object.defineProperties(game.Score.StorageView, { cid: { configurable: true, get: function() { return game.Score.cid; } } });
+game.Score.score = { $ofs:0, $t:"int8_t", $c:game.Score };
 var ut = ut || {};
 ut.Core2D = ut.Core2D || {};
 ut.Core2D.layers = ut.Core2D.layers || {};
@@ -1049,6 +1108,109 @@ ut.EditorExtensions.EntityLayer._typeDesc = (function() {
 Object.defineProperties(ut.EditorExtensions.EntityLayer, { cid: { configurable: true, get: function() { delete ut.EditorExtensions.EntityLayer.cid; var offsetsPtr = 0, offsetsCount = 0; return ut.EditorExtensions.EntityLayer.cid = Module._ut_component_register_cid_with_type(ut.EditorExtensions.EntityLayer._typeDesc, 4, 0, offsetsPtr, offsetsCount, 0, 0); } } });
 Object.defineProperties(ut.EditorExtensions.EntityLayer.StorageView, { cid: { configurable: true, get: function() { return ut.EditorExtensions.EntityLayer.cid; } } });
 ut.EditorExtensions.EntityLayer.layer = { $ofs:0, $t:"int32_t", $c:ut.EditorExtensions.EntityLayer };
+game.XMLInitialization_State = function(arg0, arg1, arg2, arg3) {
+  this._initialized = (arg0 ? true : false);
+  this._enabled = (arg1 ? true : false);
+  this._onEnableCalled = (arg2 ? true : false);
+  this._onDisableCalled = (arg3 ? true : false);
+};
+game.XMLInitialization_State.prototype = Object.create(null);
+game.XMLInitialization_State.prototype.constructor = game.XMLInitialization_State;
+Object.defineProperties(game.XMLInitialization_State.prototype, {
+  initialized: {
+    get: function() { return this._initialized; },
+    set: function(v) { this._initialized = (v ? true : false); },
+  },
+  enabled: {
+    get: function() { return this._enabled; },
+    set: function(v) { this._enabled = (v ? true : false); },
+  },
+  onEnableCalled: {
+    get: function() { return this._onEnableCalled; },
+    set: function(v) { this._onEnableCalled = (v ? true : false); },
+  },
+  onDisableCalled: {
+    get: function() { return this._onDisableCalled; },
+    set: function(v) { this._onDisableCalled = (v ? true : false); },
+  },
+});
+game.XMLInitialization_State._size = 4;
+game.XMLInitialization_State._fromPtr = function(ptr, v) {
+  v = v || Object.create(game.XMLInitialization_State.prototype);
+  v._initialized = (HEAP8[ptr+0]?true:false);
+  v._enabled = (HEAP8[ptr+1]?true:false);
+  v._onEnableCalled = (HEAP8[ptr+2]?true:false);
+  v._onDisableCalled = (HEAP8[ptr+3]?true:false);
+  return v;
+};
+game.XMLInitialization_State._toPtr = function(ptr, v) {
+  HEAP8[ptr+0] = (v.initialized)?1:0;
+  HEAP8[ptr+1] = (v.enabled)?1:0;
+  HEAP8[ptr+2] = (v.onEnableCalled)?1:0;
+  HEAP8[ptr+3] = (v.onDisableCalled)?1:0;
+};
+game.XMLInitialization_State._toTempHeapPtr = function(ptr, v) {
+  HEAP8[ptr+0] = (v.initialized)?1:0;
+  HEAP8[ptr+1] = (v.enabled)?1:0;
+  HEAP8[ptr+2] = (v.onEnableCalled)?1:0;
+  HEAP8[ptr+3] = (v.onDisableCalled)?1:0;
+};
+game.XMLInitialization_State._tempHeapPtr = function(v) {
+  var ptr = ut.tempHeapPtrBufferZero(4);
+  if (v) game.XMLInitialization_State._toTempHeapPtr(ptr, v);
+  return ptr;
+};
+game.XMLInitialization_State.StorageView = function(ptr) {
+  this._ptr = ptr;
+};
+game.XMLInitialization_State.StorageView.prototype = Object.create(null);
+game.XMLInitialization_State.StorageView.prototype.constructor = game.XMLInitialization_State.StorageView;
+game.XMLInitialization_State._view = game.XMLInitialization_State.StorageView;
+game.XMLInitialization_State.StorageView._isSharedComp = game.XMLInitialization_State._isSharedComp = false;
+game.XMLInitialization_State.StorageView._fromPtr = game.XMLInitialization_State._fromPtr;
+game.XMLInitialization_State.StorageView._toPtr = game.XMLInitialization_State._toPtr;
+game.XMLInitialization_State.StorageView._tempHeapPtr = game.XMLInitialization_State._tempHeapPtr;
+game.XMLInitialization_State.StorageView._size = game.XMLInitialization_State._size;
+game.XMLInitialization_State.StorageView.prototype.$advance = function() {
+  this._ptr += 4;
+};
+Object.defineProperties(game.XMLInitialization_State.StorageView.prototype, {
+  initialized: {
+    get: function() { return (HEAP8[this._ptr+0]?true:false); },
+    set: function(v) { HEAP8[this._ptr+0] = (v)?1:0; },
+  },
+  enabled: {
+    get: function() { return (HEAP8[this._ptr+1]?true:false); },
+    set: function(v) { HEAP8[this._ptr+1] = (v)?1:0; },
+  },
+  onEnableCalled: {
+    get: function() { return (HEAP8[this._ptr+2]?true:false); },
+    set: function(v) { HEAP8[this._ptr+2] = (v)?1:0; },
+  },
+  onDisableCalled: {
+    get: function() { return (HEAP8[this._ptr+3]?true:false); },
+    set: function(v) { HEAP8[this._ptr+3] = (v)?1:0; },
+  },
+});
+game.XMLInitialization_State._dtorFn = function dtor(ptr) { /* POD, no-op */ }
+// game.XMLInitialization_State is a POD type, so a JavaScript side copy constructor game.XMLInitialization_State._copyFn = function copy(src, dst) { ... } does not need to be generated for it
+game.XMLInitialization_State._typeDesc = (function() {
+  return ut.meta.allocType(5, 'game.XMLInitialization_State', 4, [
+    {name: 'initialized', offset: 0, type: ut.meta.getType('bool')},
+    {name: 'enabled', offset: 1, type: ut.meta.getType('bool')},
+    {name: 'onEnableCalled', offset: 2, type: ut.meta.getType('bool')},
+    {name: 'onDisableCalled', offset: 3, type: ut.meta.getType('bool')}
+  ]);
+})();
+Object.defineProperties(game.XMLInitialization_State, { cid: { configurable: true, get: function() { delete game.XMLInitialization_State.cid; var offsetsPtr = 0, offsetsCount = 0; return game.XMLInitialization_State.cid = Module._ut_component_register_cid_with_type(game.XMLInitialization_State._typeDesc, 1, 0, offsetsPtr, offsetsCount, 0, 0); } } });
+Object.defineProperties(game.XMLInitialization_State.StorageView, { cid: { configurable: true, get: function() { return game.XMLInitialization_State.cid; } } });
+game.XMLInitialization_State.initialized = { $ofs:0, $t:"bool", $c:game.XMLInitialization_State };
+game.XMLInitialization_State.enabled = { $ofs:1, $t:"bool", $c:game.XMLInitialization_State };
+game.XMLInitialization_State.onEnableCalled = { $ofs:2, $t:"bool", $c:game.XMLInitialization_State };
+game.XMLInitialization_State.onDisableCalled = { $ofs:3, $t:"bool", $c:game.XMLInitialization_State };
+game.ButtonSystemJS = ut.System.define({
+  name: "game.ButtonSystemJS"
+});
 
 
 

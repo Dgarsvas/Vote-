@@ -14,16 +14,21 @@ var __extends = (this && this.__extends) || (function () {
 var game;
 (function (game) {
     /** New System */
-    var ButtonSystem1 = /** @class */ (function (_super) {
-        __extends(ButtonSystem1, _super);
-        function ButtonSystem1() {
+    var ButtonSystem = /** @class */ (function (_super) {
+        __extends(ButtonSystem, _super);
+        function ButtonSystem() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        ButtonSystem1.prototype.OnUpdate = function () {
+        ButtonSystem.prototype.OnUpdate = function () {
+            var _this = this;
+            this.world.forEach([ut.Entity, ut.UIControls.Button], function (entity, Button) {
+                var state = ut.UIControls.Button.transition(_this.world, entity);
+                console.log(_this.world.getEntityName(entity) + " is at (" + state + ")");
+            });
         };
-        return ButtonSystem1;
+        return ButtonSystem;
     }(ut.ComponentSystem));
-    game.ButtonSystem1 = ButtonSystem1;
+    game.ButtonSystem = ButtonSystem;
 })(game || (game = {}));
 var game;
 (function (game) {
