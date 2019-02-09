@@ -8,7 +8,7 @@
     },
     "compileOnSave": true,
     "include": [
-        "Assets/Project/VoteProject/**/*.ts",
+        "Assets/VoteProject/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Core2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Math/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Core/**/*.ts",
@@ -23,7 +23,12 @@
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.RendererGLWebGL/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.RendererGL/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Sprite2D/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EditorExtensions/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EditorExtensions/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UILayout/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControls/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.UIControlsExtensions/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.Text/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.TextHTML/**/*.ts"
     ],
     "exclude": [],
     "files": [

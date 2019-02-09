@@ -216,6 +216,7 @@ declare namespace ut{
         game: {
             [data: string]: EntityGroupData;
             NewEntityGroup: EntityGroupData;
+            NewEntityGroup1: EntityGroupData;
         }
     }
 }

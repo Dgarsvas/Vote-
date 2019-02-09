@@ -1,0 +1,122 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/VoteProject/html5/development/build/runtime.js",
+                "Size": 5664364,
+                "CompressedSize": 700818
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 112624,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Resources/unity_builtin_extra",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/UISprite.jpg",
+                    "Size": 1224,
+                    "CompressedSize": 878,
+                    "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
+                }
+            }, {
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/UISprite_a.png",
+                    "Size": 448,
+                    "CompressedSize": 380,
+                    "Object": { "$TypeId": 10, "Guid": "0000000000000000f000000000000000", "FileId": 10904, "Type": 0 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8f586378b4e144a9851e7b34d9b748ee", "FileId": 11400000, "Type": 2 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/assets/LiberationSans SDF.png",
+                    "Size": 714584,
+                    "CompressedSize": 538930,
+                    "Object": { "$TypeId": 10, "Guid": "8f586378b4e144a9851e7b34d9b748ee", "FileId": 11400000, "Type": 2 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/VoteProject/html5/development/build/entities.js",
+                "Size": 8718,
+                "CompressedSize": 1870
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "NewEntityGroup",
+                    "Size": 8635,
+                    "CompressedSize": 1791
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/VoteProject/html5/development/build/bindings.js",
+                "Size": 70475,
+                "CompressedSize": 5444
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/VoteProject/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 3168,
+                    "CompressedSize": 927
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/VoteProject/html5/development/build/main.js",
+                "Size": 2816,
+                "CompressedSize": 862
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/VoteProject/html5/development/build/wsclient.js",
+                "Size": 9651,
+                "CompressedSize": 2635
+            }
+        }]
+    }]
+}
