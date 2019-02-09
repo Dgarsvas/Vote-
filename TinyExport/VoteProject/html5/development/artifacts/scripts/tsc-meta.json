@@ -1,45 +1,154 @@
 {
     "Success": true,
     "Diagnostics": [],
-    "Systems": [],
-    "Filters": [],
-    "Behaviours": [],
+    "Systems": [
+        {
+            "Name": "ButtonSystem1",
+            "QualifiedName": "game.ButtonSystem1",
+            "Description": "New System",
+            "Source": {
+                "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/ButtonSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        }
+    ],
+    "Filters": [
+        {
+            "Name": "XMLInitializationFilter",
+            "QualifiedName": "game.XMLInitializationFilter",
+            "Description": "",
+            "Source": {
+                "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                "Line": 4,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "node",
+                    "QualifiedName": "ut.Core2D.TransformNode",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                        "Line": 4,
+                        "Character": 67
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "position",
+                    "QualifiedName": "ut.Core2D.TransformLocalPosition",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                        "Line": 5,
+                        "Character": 39
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": true,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "rotation",
+                    "QualifiedName": "ut.Core2D.TransformLocalRotation",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                        "Line": 6,
+                        "Character": 53
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": true,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "scale",
+                    "QualifiedName": "ut.Core2D.TransformLocalScale",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                        "Line": 7,
+                        "Character": 53
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": true,
+                    "IsPublic": true
+                }
+            ]
+        }
+    ],
+    "Behaviours": [
+        {
+            "Name": "XMLInitialization",
+            "QualifiedName": "game.XMLInitialization",
+            "Description": "",
+            "Source": {
+                "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                "Line": 11,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "data",
+                    "QualifiedName": "game.XMLInitializationFilter",
+                    "Description": "",
+                    "Source": {
+                        "File": "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
+                        "Line": 11,
+                        "Character": 67
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                }
+            ]
+        }
+    ],
     "Performance": [
         {
             "Key": "tsconfig",
             "Description": "Time taken to read and parse the given tsconfig.json file",
-            "Duration": 142,
+            "Duration": 190,
             "Steps": 1
         },
         {
             "Key": "checksum",
             "Description": "Time taken to compute the MD5 of all inputs",
-            "Duration": 191,
+            "Duration": 240,
             "Steps": 1
         },
         {
             "Key": "compile",
             "Description": "Time taken to compile the TypeScript program",
-            "Duration": 922,
-            "Steps": 9
+            "Duration": 892,
+            "Steps": 11
         },
         {
             "Key": "emit",
             "Description": "Time taken to generate and write the JavaScript output",
-            "Duration": 25,
+            "Duration": 64,
             "Steps": 2
         },
         {
             "Key": "metadata",
             "Description": "Time taken to reflect Tiny metadata from the compiled program",
-            "Duration": 18,
-            "Steps": 0
+            "Duration": 0,
+            "Steps": 1
         }
     ],
     "SourceFiles": [
+        "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/ButtonSystem.ts",
+        "D:/programavimas/unity/Vote!/Assets/VoteProject/Scripts/XMLInitialization.ts",
         "D:/programavimas/unity/Vote!/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
         "D:/programavimas/unity/Vote!/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
     ],
-    "InputHash": "f387044ddbc9481e31234e134a912fbb",
-    "GeneratedAt": "Sat Feb 09 2019 17:15:04 GMT+0200 (FLE Standard Time)"
+    "InputHash": "a6d5ca1acc33ee9bbabaa40750fb90ba",
+    "GeneratedAt": "Sat Feb 09 2019 20:33:21 GMT+0200 (FLE Standard Time)"
 }

@@ -77,21 +77,7 @@ declare namespace ut {
   }
 }
 declare var UT_ASSETS: Object;
-declare namespace game{
-    class Score extends ut.Component {
-        constructor();
-        score: number;
-        static readonly cid: number;
-        static readonly _view: any;
-        static readonly _isSharedComp: boolean;
-        static _size: number;
-        static _fromPtr(p: number, v?: Score): Score;
-        static _toPtr(p: number, v: Score): void;
-        static _tempHeapPtr(v: Score): number;
-        static _dtorFn(v: Score): void;
-    }
-}
-declare namespace ut{
+declare namespace module{
 }
 declare namespace ut.EditorExtensions{
     class AssetReferenceAnimationClip extends ut.Component {
@@ -218,6 +204,8 @@ declare namespace ut.EditorExtensions{
     }
 }
 declare namespace ut{
+}
+declare namespace ut{
     class EntityGroupData extends Object{
         Component: ut.ComponentClass<any>;
         load(world: ut.World): ut.Entity[];
@@ -225,10 +213,6 @@ declare namespace ut{
     }
     interface EntityGroups{
         [module: string]: any;
-        game: {
-            [data: string]: EntityGroupData;
-            MainEntityGroup: EntityGroupData;
-        }
     }
 }
 declare let entities: ut.EntityGroups;
